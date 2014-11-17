@@ -1,0 +1,7 @@
+ {
+     "server": {
+         "proxy_port": 8099,
+         "route": "send",
+         "upstream_url": "http://influxdb:8086/db/{{INFLUXDB_DATABASE}}/series?u={{INFLUXDB_USERNAME}}&p={{INFLUXDB_PASSWORD}}"
+     }
+ }
