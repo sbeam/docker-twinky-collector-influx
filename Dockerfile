@@ -8,7 +8,7 @@ RUN wget https://github.com/sbeam/twinky-collector/archive/v$VERSION.tar.gz -O /
 
 RUN cd /opt/twinky-collector && npm install
 
-ADD default.yaml.template /opt/twinky-collector/config/default.yaml.template
+ADD default.json.template /opt/twinky-collector/config/default.json.template
 
 ADD run.sh /opt/twinky-collector/run.sh
 RUN chmod +x /opt/twinky-collector/run.sh
