@@ -1,8 +1,8 @@
 FROM dockerfile/nodejs
 
-ENV VERSION 0.1.0
+ENV VERSION 0.1.1
 
-RUN wget https://github.com/sbeam/twinky-collector/archive/v$VERSION.tar.gz -O /opt/twinky-collector.tar.gz && \
+RUN wget https://github.com/sbeam/twinky-collector/archive/$VERSION.tar.gz -O /opt/twinky-collector.tar.gz && \
     mkdir -p /opt/twinky-collector && \
     tar --strip-components=1 -xzf /opt/twinky-collector.tar.gz -C /opt/twinky-collector
 
